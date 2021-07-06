@@ -1,5 +1,11 @@
 {{ define "main" }}
 {{ partial "hero" . }}
+<div class="intro">
+    {{ with .Params.intro }}
+    <h1 class="heading-test">{{ .heading }}</h1>
+    {{ .copy }}
+    {{ end }}
+</div>
 {{ with site.Data.homepage.intro }}
 <div class="container padding-top-4 padding-bottom-4">
     <h1 class="text-center-m">{{ .heading }}</h1>

@@ -1,4 +1,4 @@
-baseURL = "https://animal-care-center.netlify.app/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Animal Care Center"
 enableRobotsTXT = true

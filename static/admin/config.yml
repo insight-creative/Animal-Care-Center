@@ -20,6 +20,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
+    preview_path: "layouts/home.html"
     label: "Pages"
     files:
       - file: "content/_index.md"

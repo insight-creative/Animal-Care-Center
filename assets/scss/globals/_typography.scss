@@ -1,24 +1,12 @@
-/*--------------------------------------------------------------
-7.0 Typography
---------------------------------------------------------------*/
-html {
-  font-size: 100%;
-  font-size: 10px;
-}
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-  color: $gray;
   font-family: $primaryFont;
-  font-size: 2rem;
+  font-size: $ic-300;
   line-height: 3rem;
-  @include breakpoint(md) {
-    font-size: 2.6rem;
-    line-height: 4rem;
-  }
 }
 h1,
 h2,
@@ -26,99 +14,87 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $secondaryFont;
   font-weight: 700;
-  color: $primaryColor;
-  line-height: 1.2em;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  line-height: 1.3em;
+  margin-bottom: 0.65em;
 }
-p {
-  @include breakpoint(md) {
-    margin: 0 auto 20px auto;
-  }
+.max-80 {
+  max-width: $measure;
 }
-/* Font-scale of a major third */
 h1,
-.g1 {
-  font-size: 3rem;
-  @include breakpoint(md) {
-    font-size: 4.2rem;
-  }
+.h1 {
+  font-size: $ic-600;
 }
 h2,
-.g2 {
-  font-size: 3.2rem;
-  @include breakpoint(md) {
-    font-size: 4rem;
-  }
+.h2 {
+  font-size: $ic-500;
 }
 h3,
-.g3 {
-  font-size: 3.2rem;
-  @include breakpoint(md) {
-    font-size: 3rem;
-  }
+.h3 {
+  font-size: $ic-400;
 }
 h4,
-.g4 {
-  font-size: 2.8rem;
+.h4 {
+  font-size: $ic-300;
 }
 h5,
-.g5 {
-  font-size: 2.4rem;
+.h5 {
+  font-size: $ic-200;
 }
 h6,
-.g6 {
-  font-size: 2rem;
-}
-/* Type Scale Gears*/
-.g7 {
-  font-size: 1.8rem;
-}
-.g8 {
-  font-size: 1.6rem;
-}
-.text-left {
-  text-align: left !important;
-}
-.text-right {
-  text-align: right !important;
-}
-.text-center {
-  text-align: center !important;
-}
-@include breakpoint(sm) {
-  .text-left-s {
-    text-align: left !important;
-  }
-  .text-right-s {
-    text-align: right !important;
-  }
-  .text-center-s {
-    text-align: center !important;
-  }
+.h6 {
+  font-size: $ic-200;
 }
 @include breakpoint(md) {
-  .text-left-m {
-    text-align: left !important;
+  h1,
+  .h1 {
+    font-size: $ic-700;
   }
-  .text-right-m {
-    text-align: right !important;
+  h2,
+  .h2 {
+    font-size: $ic-600;
   }
-  .text-center-m {
-    text-align: center !important;
+  h3,
+  .h3 {
+    font-size: $ic-500;
+  }
+  h4,
+  .h4 {
+    font-size: $ic-400;
+  }
+  h5,
+  .h5 {
+    font-size: $ic-300;
   }
 }
-@include breakpoint(lg) {
-  .text-left-l {
-    text-align: left !important;
+p {
+  margin: 0 0 1rem;
+}
+
+.page-body > * + * {
+  margin-top: $ic-400;
+}
+
+ul {
+  line-height: 1.7rem;
+}
+
+article {
+  > ul,
+  > ol {
+    > li + li {
+      margin-top: $ic-100;
+    }
   }
-  .text-right-l {
-    text-align: right !important;
-  }
-  .text-center-l {
-    text-align: center !important;
+
+  * {
+    + h2 {
+      margin-top: 4rem;
+    }
+
+    + h3 {
+      margin-top: 2rem;
+    }
   }
 }
 .i {
@@ -156,13 +132,4 @@ h6,
 }
 .text-white {
   color: $white;
-}
-.tagline {
-  font-size: 2.8rem;
-  font-weight: 700;
-  font-style: italic;
-  color: $primaryColor;
-  @include breakpoint(md) {
-    font-size: 3.4rem;
-  }
 }

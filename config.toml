@@ -1,6 +1,6 @@
-baseURL = "https://amplifytechwi.com/"
+baseURL = "https://animal-care-center.netlify.app/"
 languageCode = "en-us"
-title = "Amplify Technologies"
+title = "Animal Care Center"
 enableRobotsTXT = true
 disableAliases = true
 # post pagination
@@ -13,7 +13,7 @@ summaryLength = 30
   logo = "images/logo.jpg"
   # Meta data
   description = " "
-  author = "Amplify Technologies"
+  author = "Animal Care Center"
   # Contact Information
   phone = "920-759-9315"
   email = "allie@randrtech.com"

@@ -1,0 +1,22 @@
+{{ define "main" }}
+    {{ partial "hero" .  }}
+    <div class="service container padding-top-4 padding-bottom-4">
+        {{ with .Params.intro }}
+        <h2>{{ .heading }}</h2>
+        <h3 class="g4">{{ .subhead }}</h3>
+        <p>{{ .copy | markdownify }}</p>
+        {{ end }}
+    </div>
+    <div class="container padding-bottom-4">
+        {{ with .Params.offerings }}
+        <h3>{{ .heading }}</h3>
+        <ul>
+            {{ range .offering_list }}
+            <li>{{ .item | markdownify }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+    {{ partial "services" . }}
+    {{ partial "cta" . }}
+{{ end }}

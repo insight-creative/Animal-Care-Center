@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------
+7.0 Typography
+--------------------------------------------------------------*/
+html {
+  font-size: 100%;
+  font-size: 10px;
+}
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $gray;
+  font-family: $primaryFont;
+  font-size: 2rem;
+  line-height: 3rem;
+  @include breakpoint(md) {
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  color: $primaryColor;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p {
+  @include breakpoint(md) {
+    margin: 0 auto 20px auto;
+  }
+}
+/* Font-scale of a major third */
+h1,
+.g1 {
+  font-size: 3rem;
+  @include breakpoint(md) {
+    font-size: 4.2rem;
+  }
+}
+h2,
+.g2 {
+  font-size: 3.2rem;
+  @include breakpoint(md) {
+    font-size: 4rem;
+  }
+}
+h3,
+.g3 {
+  font-size: 3.2rem;
+  @include breakpoint(md) {
+    font-size: 3rem;
+  }
+}
+h4,
+.g4 {
+  font-size: 2.8rem;
+}
+h5,
+.g5 {
+  font-size: 2.4rem;
+}
+h6,
+.g6 {
+  font-size: 2rem;
+}
+/* Type Scale Gears*/
+.g7 {
+  font-size: 1.8rem;
+}
+.g8 {
+  font-size: 1.6rem;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+@include breakpoint(sm) {
+  .text-left-s {
+    text-align: left !important;
+  }
+  .text-right-s {
+    text-align: right !important;
+  }
+  .text-center-s {
+    text-align: center !important;
+  }
+}
+@include breakpoint(md) {
+  .text-left-m {
+    text-align: left !important;
+  }
+  .text-right-m {
+    text-align: right !important;
+  }
+  .text-center-m {
+    text-align: center !important;
+  }
+}
+@include breakpoint(lg) {
+  .text-left-l {
+    text-align: left !important;
+  }
+  .text-right-l {
+    text-align: right !important;
+  }
+  .text-center-l {
+    text-align: center !important;
+  }
+}
+.i {
+  font-style: italic;
+}
+.b {
+  font-weight: bold;
+}
+.shift-first {
+  text-transform: capitalize;
+}
+.shift-up {
+  text-transform: uppercase;
+}
+.fw4 {
+  font-weight: 400;
+}
+.fw5 {
+  font-weight: 500;
+}
+.fw6 {
+  font-weight: 600;
+}
+.fw7 {
+  font-weight: 700;
+}
+.fw8 {
+  font-weight: 800;
+}
+.fw9 {
+  font-weight: 900;
+}
+.no-margin {
+  margin: 0;
+}
+.text-white {
+  color: $white;
+}
+.tagline {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: $primaryColor;
+  @include breakpoint(md) {
+    font-size: 3.4rem;
+  }
+}

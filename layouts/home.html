@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ with site.Data.homepage.intro }}
+<div class="container padding-top-4 padding-bottom-4">
+    <h1 class="text-center-m">{{ .heading }}</h1>
+    <p class="intro">{{ .copy }}  <span class="tagline">{{ .tagline }}</span></p>
+</div>
+{{ end }}
+{{ partial "services" . }}
+{{ with site.Data.homepage.projects }}
+<div class="container text-center-m padding-top-4">
+    <h3 class="g1">{{ .heading }}</h3>
+    <p>{{ .copy }}</p>
+</div>
+<div class="featured-projects">
+    <div class="container text-center">
+        <!-- <h3 class="featured-projects__heading text-white g1">{{ .subheading }}</h3> -->
+        <div class="featured-projects__logo-container">
+            {{ with site.Data.homepage.projects }}
+                {{ range .client }}
+                    <img src="/images/{{ .logo }}" alt="{{ .name }}" class="featured-projects__logo" width="200" height="100">
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
+<!-- <div class="container text-center padding-top-4">
+    {{ with site.Data.homepage.blog }}
+        <h3 class="g1">{{ .heading }}</h3>
+    {{ end }}
+    <div class="latest-posts flex flex-column flex-row-m">
+        {{ range first 2 (where site.RegularPages "Type" "tech-tips") }}
+            {{ partial "blog/blog-cards" . }}
+        {{ end }}
+    </div>
+</div> -->
+{{ partial "cta" . }}
+{{ end }}

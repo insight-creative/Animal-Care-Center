@@ -64,48 +64,6 @@ summaryLength = 30
     url  = "/services/"
     weight = 2
 
-  [[menu.main]]
-    parent = "Services"
-    name = "Commercial Grade Speakers, Paging & Emergency"
-    weight = 1
-    url = "/services/commercial-speakers-pagers-emergency/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "Audiovisual and Lighting Control"
-    weight = 2
-    url = "/services/audiovisual-lighting-controls/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "Commercial Grade Cameras"
-    weight = 3
-    url = "/services/commercial-grade-cameras/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "Audiovisual and Lighting Control"
-    weight = 4
-    url = "/services/audiovisual-lighting-controls/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "Access Control Systems"
-    weight = 5
-    url = "/services/access-control-systems/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "Surveillance Systems"
-    weight = 6
-    url = "/services/surveillance-systems/"
-
-  [[menu.main]]
-    parent = "Services"
-    name = "DirecTV Installation & Service"
-    weight = 7
-    url = "/services/directv-install-service/"
-
 [[menu.main]]
     name = "About"
     url  = "/about/"

@@ -31,7 +31,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: $whiteOverlay;
+    background: $white-overlay;
     display: grid;
     place-items: center;
     opacity: 0;
@@ -44,14 +44,14 @@
   }
 }
 .staff-single {
-  margin-top: $mobileHeader;
+  margin-top: $mobile-header;
   @include breakpoint(md) {
-    margin-top: $desktopHeader;
+    margin-top: $desktop-header;
   }
   .w-50-m + .w-50-m {
     @include breakpoint(md) {
       margin-left: 2rem;
-      border-left: 6px solid $primaryColor;
+      border-left: 6px solid $primary-color;
       padding: 0 2rem;
     }
   }

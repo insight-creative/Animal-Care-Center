@@ -1,5 +1,9 @@
-{{ with site.Data.homepage.call_to_action }}
-<div class="container text-center padding-bottom-4">
-    <h3>{{ .heading }} <span class="cta-link"><a href="/contact/">{{ .action }}</a></span></h3>
+<div class="cta">
+    <div class="wrapper flow text-center cta__inner">
+        <h2 class="text-primary">{{.heading}}</h2>
+        <h3 class="text-primary">{{.subhead}}</h3>
+        <a href="{{.button_link}}" class="btn btn-secondary">{{.button_text}}</a>
+        <img src="/images/dog-and-cat-background.png" alt="a variety of dogs and cats sitting next to each other" height="300" width="600">
+    </div>
+    {{ partial "svg-icons/ekg-green-reverse.svg" . }}
 </div>
-{{ end }}

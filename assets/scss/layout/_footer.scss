@@ -1,79 +1,73 @@
-.pre-footer {
-  height: 200px;
-  width: 100%;
-  background-image: url("/images/Amplify-EQ.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .footer {
-  background-color: $primaryColor;
+  background-color: $secondary-color;
   color: $white;
-  padding: 2em;
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  @include breakpoint(sm) {
-    .w-50 + .w-50 {
-      margin-left: 2rem;
+  padding: $ic-700 0;
+  font-size: $ic-200;
+
+  &__wrapper {
+    display: grid;
+    gap: $ic-400;
+
+    @include breakpoint(md) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $ic-400;
+    }
+
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(5, 1fr);
     }
   }
-  &__content {
-    justify-content: space-between;
+
+  iframe {
+    height: 20rem;
+
+    @include breakpoint(md) {
+      height: 16rem;
+    }
   }
-  span {
-    color: $tan;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
+
   a {
     color: $white;
     text-decoration: none;
     display: block;
-    &:hover {
-      color: $tan;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
+
   p {
     margin-bottom: 0;
   }
-  &__map {
-    display: none;
-    @include breakpoint(sm) {
-      display: block;
-    }
-  }
-  &__hours-inner {
-    margin: 2rem 0;
-    @include breakpoint(md) {
-      margin: 0;
-      width: fit-content;
-      margin: 0 auto;
-    }
-  }
+
   &__nav {
     display: flex;
     justify-content: center;
+
     ul {
       margin-bottom: 0;
     }
   }
+
   &__nav-list {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
+
   &__nav-list-item {
     list-style-type: none;
   }
-  &__social {
-    display: grid;
+
+  &__social-grid {
+    display: flex;
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
   }
+
   svg {
-    width: 40px;
+    width: $ic-600;
     fill: $white;
-    margin: 0 auto;
   }
 }

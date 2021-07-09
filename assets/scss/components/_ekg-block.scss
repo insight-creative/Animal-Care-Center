@@ -1,0 +1,27 @@
+.ekg-block {
+  position: relative;
+
+  svg {
+    position: relative;
+    top: 10px;
+
+    @include breakpoint(md) {
+      top: 15px;
+    }
+  }
+
+  &__copy {
+    display: grid;
+    place-items: center;
+    padding: $ic-300;
+  }
+
+  &__image {
+    align-items: center;
+
+    img {
+      height: 120%;
+      object-fit: cover;
+    }
+  }
+}

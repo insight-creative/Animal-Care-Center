@@ -1,5 +1,32 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "full-service" . }}
-{{ partial "services" . }}
+<div class="wrapper">
+    <div class="block flow">
+        {{ with .Params.services_intro }}
+        <h1 class="text-primary">{{ .heading }}</h1>
+        <p>{{ .copy }}</p>
+        {{ end }}
+    </div>
+</div>
+<div class="services">
+    {{ partial "svg-icons/ekg-green-reverse.svg" . }}
+    <div class="wrapper">
+        {{ range .Params.services }}
+        <div class="block service-card-wrapper">
+            <div class="service-card service-card--{{ .heading | lower | urlize }}">
+                <div class="service-card__icon">
+                    {{ partial "service-icons" . }}
+                </div>
+                <div class="service-card__content flow">
+                    <h1 class="text-primary">{{ .heading }}</h1>
+                    <p>{{ .copy }}</p>
+                    <a href="{{ .button_link }}" class="btn btn-secondary">{{ .button_text }}</a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ partial "svg-icons/ekg-blue.svg" . }}
+</div>
+{{ partial "services-cta" }}
 {{ end }}

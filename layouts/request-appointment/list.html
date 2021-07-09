@@ -1,0 +1,98 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+<div class="wrapper">
+    <div class="block">
+        <h1>{{ .Title }}</h1>
+    </div>
+    <div class="contact-form block">
+        <h2 class="text-primary">Request an Appointment</h2>
+        <h3 class="text-primary">If this is an urgent issue, please call us at <a href="tel:{{ .Site.Params.phone }}">(847) 796-2420</a>.</h3>
+      <div class="contact-form__wrapper">
+          <form name="Animal Care Center of Buffalo Grove Appointment Request Form" netlify netlify-honeypot="bot-field" action="/thank-you">
+            <div hidden>
+                <label>
+                    Don’t fill this out if you're human: 
+                    <input name="bot-field" />
+                </label>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="name">Name*</label>
+                <input aria-label="name" name="name" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="_replyto">Email*</label>
+                <input aria-label="email" name="_replyto" type="email" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="phone">Phone*</label>
+                <input aria-label="phone" name="phone" type="phone" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="pets name">Pets Name*</label>
+                <input aria-label="pets name" name="pets name" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="pets name">Patient Type</label>
+                <div class="flex radio">
+                    <input type="radio" id="new-patient" name="new-patient" value="New Patient">
+                    <label for="new-patient">New Patient</label>
+                </div>
+                <div class="flex radio">
+                    <input type="radio" id="returning-patient" name="returning-patient" value="Returning Patient">
+                    <label for="returning-patient">Returning Patient</label>
+                </div>
+            </div>
+            <p>Please choose three possible appointment dates and times.</p>
+            <div class="flex date-wrapper">
+                <div class="contact-form__form-group">
+                    <label for="date">Date*</label>
+                    <input aria-label="date" name="date" type="date" class="contact-form__form-control" required>
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="start-time">Start Time*</label>
+                    <input aria-label="start time" name="start-time" type="time" class="contact-form__form-control" required>
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="end-time">End Time*</label>
+                    <input aria-label="end time" name="end-time" type="time" class="contact-form__form-control" required>
+                </div>
+            </div>
+            <div class="flex date-wrapper">
+                <div class="contact-form__form-group">
+                    <label for="date2">Date</label>
+                    <input aria-label="date 2" name="date2" type="date" class="contact-form__form-control">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="start-time-2">Start Time</label>
+                    <input aria-label="start time 2" name="start-time-2" type="time" class="contact-form__form-control">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="end-time-2">End Time</label>
+                    <input aria-label="end time 2" name="end-time-2" type="time" class="contact-form__form-control">
+                </div>
+            </div>
+            <div class="flex date-wrapper">
+                <div class="contact-form__form-group">
+                    <label for="date3">Date</label>
+                    <input aria-label="date 3" name="date3" type="date" class="contact-form__form-control">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="start-time-3">Start Time</label>
+                    <input aria-label="start time 3" name="start-time-3" type="time" class="contact-form__form-control">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="end-time-3">End Time</label>
+                    <input aria-label="end time 3" name="end-time-3" type="time" class="contact-form__form-control">
+                </div>
+            </div>
+            <div class="contact-form__form-group">
+                <label for="message">Tell us why you are requesting this appointment.*</label>
+                <textarea aria-label="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
+            </div>
+            <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+            <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Message</button>
+          </form>
+      </div>
+  </div>
+</div>
+{{ end }}

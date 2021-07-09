@@ -1,0 +1,48 @@
+.service-card {
+  &__icon {
+    margin-bottom: $ic-400;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    svg {
+      max-height: 12rem;
+    }
+  }
+
+  @include breakpoint(md) {
+    display: flex;
+
+    &__icon {
+      flex: 1;
+
+      svg {
+        max-height: 16rem;
+      }
+    }
+
+    &__content {
+      flex: 2;
+    }
+  }
+}
+
+.service-card-wrapper:nth-child(odd) {
+  @include breakpoint(md) {
+    .service-card__content {
+      margin-left: $ic-700;
+    }
+  }
+}
+
+.service-card-wrapper:nth-child(even) {
+  @include breakpoint(md) {
+    .service-card {
+      flex-direction: row-reverse;
+
+      &__content {
+        margin-right: $ic-700;
+      }
+    }
+  }
+}

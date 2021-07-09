@@ -1,32 +1,43 @@
 // Colors
-$primaryColor: #2b3b93;
-$secondaryColor: #7881bc;
-$lightBlue: #afd1ed;
+$primary-color: #144a8e;
+$secondary-color: #588139;
+$light-gray: #f6f6f6;
 $gray: #58595b;
-$lightGray: #f6f6f6;
 $black: #232323;
-$tan: #c6bd9e;
 $white: #ffffff;
 
 // overlays
-$whiteOverlay: rgba(255, 255, 255, 0.9);
+$white-overlay: rgba(255, 255, 255, 0.9);
 
-$blueShadow: rgba(43, 59, 147, 0.2);
+$blue-shadow: rgba(43, 59, 147, 0.2);
 
 // Fonts
-$primaryFont: Helvetica, Arial, sans-serif;
-$secondaryFont: Arial, sans-serif;
+$primary-font: Helvetica, Arial, sans-serif;
+$secondary-font: Arial, sans-serif;
 
-$mobileHeader: 100px;
-$desktopHeader: 130px;
+$mobile-header: 105px;
+$desktop-header: 145px;
 
-// Scale and rhythm
-$ic-100: 0.75rem;
+// Scale and rhythm based on a major third
+$ic-100: 0.8rem;
 $ic-200: 1rem;
-$ic-300: 1.333rem;
-$ic-400: 1.777rem;
-$ic-500: 2.369rem;
-$ic-600: 3.157rem;
-$ic-700: 4.209rem;
+$ic-300: 1.25rem;
+$ic-400: 1.563rem;
+$ic-500: 1.953rem;
+$ic-600: 2.441rem;
+$ic-700: 3.052rem;
+$ic-800: 3.815rem;
+$ic-900: 4.769rem;
+
+// // Scale and rhythm based on a perfect fourth
+// $ic-100: 0.75rem;
+// $ic-200: 1rem;
+// $ic-300: 1.333rem;
+// $ic-400: 1.777rem;
+// $ic-500: 2.369rem;
+// $ic-600: 3.157rem;
+// $ic-700: 4.209rem;
 
 $measure: 80ch;
+$measure-short: 60ch;
+$measure-long: 90ch;

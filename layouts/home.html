@@ -1,16 +1,51 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-<div class="intro">
-    {{ with .Params.intro }}
-    <h1 class="heading-test">{{ .heading }}</h1>
-    {{ .copy }}
-    {{ end }}
+<div class="wrapper">
+    <div class="block flow">
+        {{ with .Params.intro }}
+        <h1 class="text-primary">{{ .heading }}</h1>
+        <p>{{ .copy }}</p>
+        <a href="{{ .button_link }}" class="btn btn-secondary">{{ .button_text }}</a>
+        {{ end }}
+    </div>
 </div>
-{{ with site.Data.homepage.intro }}
-<div class="container padding-top-4 padding-bottom-4">
-    <h1 class="text-center-m">{{ .heading }}</h1>
-    <p class="intro">{{ .copy }}  <span class="tagline">{{ .tagline }}</span></p>
+<div class="block ekg-block">
+    {{ partial "svg-icons/ekg-green-reverse.svg" . }}
+    <div class="bg-green">
+        <div class="wrapper-wide text-white flex-container">
+            {{ with .Params.services_block }}
+            <div class="w-100 w-50-m ekg-block__copy">
+                <div class="flow ekg-block__copy-inner">
+                    <h2>{{ .heading }}</h2>
+                    <p>{{ .copy }}</p>
+                    <a href="{{ .button_link }}" class="btn btn-white btn-text-secondary">{{ .button_text }}</a>
+                </div>
+            </div>
+            <div class="w-100 w-50-m flex ekg-block__image">
+                <img src="{{ .image }}" alt="{{ .image_alt }}" height="600" width="500">
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </div>
-{{ end }}
-{{ partial "cta" . }}
+<div class="block ekg-block">
+    {{ partial "svg-icons/ekg-blue.svg" . }}
+    <div class="bg-blue">
+        <div class="wrapper-wide text-white flex-container">
+            {{ with .Params.about_block }}
+            <div class="w-100 w-50-m flex ekg-block__image">
+                <img src="{{ .image }}" alt="{{ .image_alt }}" height="600" width="500">
+            </div>
+            <div class="w-100 w-50-m ekg-block__copy">
+                <div class="flow ekg-block__copy-inner">
+                    <h2>{{ .heading }}</h2>
+                    <p>{{ .copy }}</p>
+                    <a href="{{ .button_link }}" class="btn btn-white btn-text-primary">{{ .button_text }}</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ partial "cta" (dict "heading" .Params.home_cta.heading "subhead" .Params.home_cta.subhead "button_text" .Params.home_cta.button_text "button_link" .Params.home_cta.button_link) }}
 {{ end }}

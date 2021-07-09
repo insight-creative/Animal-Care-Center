@@ -15,14 +15,13 @@ summaryLength = 30
   description = " "
   author = "Animal Care Center"
   # Contact Information
-  phone = "920-759-9315"
-  email = "allie@randrtech.com"
+  phone = "847-796-2420"
+  email = "animalcarecenterbg@gmail.com"
   address = """
-    PO Box 1007,
-    Kaukauna, WI 54310"""
-  hoursMF = "Monday-Friday 9 am - 4 pm"
-  hoursSat = "Saturdays 9 am - 1 pm"
-  hoursSun = "Closed Sunday"
+    600 McHenry Rd.
+    Buffalo Grove, IL 60089"""
+  hoursMF = "Monday-Friday 6am-6pm"
+  hoursSat = "Saturday 8am-noon"
   disallowSearchEngines = true
   # Google Analitycs
   googleAnalytics = " " # Your ID# search 
@@ -68,6 +67,11 @@ summaryLength = 30
     name = "About"
     url  = "/about/"
     weight = 4
+
+[[menu.main]]
+    name = "Affiliated Hospitals"
+    url  = "#"
+    weight = 6
 
 [[menu.main]]
     name = "Contact"

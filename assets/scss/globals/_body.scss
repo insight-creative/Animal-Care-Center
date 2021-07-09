@@ -2,6 +2,7 @@
   box-sizing: border-box;
   max-width: $measure;
 }
+
 html,
 body,
 div,
@@ -11,20 +12,32 @@ main,
 footer {
   max-width: none;
 }
+
 body {
-  font-family: $primaryFont;
-  color: $black;
-  overflow-x: hidden;
+  font-family: $primary-font;
+  color: $gray;
 }
+
+:focus {
+  outline: 2px dashed get-color("primary");
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
 // Style highlight to match our themes colors
 ::-moz-selection {
   background: rgba(43, 59, 147, 0.8);
   color: $white;
 }
+
 ::selection {
   background: rgba(43, 59, 147, 0.8);
   color: $white;
 }
+
 ::-ms-selection {
   background: rgba(43, 59, 147, 0.8);
   color: $white;

@@ -1,5 +1,5 @@
 .breadcrumbs-nav {
-  color: $primaryColor;
+  color: $primary-color;
   margin: 0;
   padding: 0;
   li {
@@ -22,7 +22,7 @@
   }
   a {
     margin: 0 1rem;
-    color: $primaryColor;
+    color: $primary-color;
     text-decoration: none;
     font-size: 1.6rem;
   }
@@ -42,11 +42,11 @@
     }
     li {
       &:after {
-        color: $primaryColor;
+        color: $primary-color;
       }
     }
     a {
-      color: $primaryColor;
+      color: $primary-color;
     }
   }
 }

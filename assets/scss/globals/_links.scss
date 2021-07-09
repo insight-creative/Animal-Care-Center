@@ -1,20 +1,23 @@
 a {
-  color: $primaryColor;
+  color: $primary-color;
   transition: 0.3s ease;
   display: inline-block;
+
   &:hover,
   &:focus {
-    color: $secondaryColor;
-    outline-color: $secondaryColor;
+    color: $secondary-color;
+    outline-color: $secondary-color;
   }
 }
+
 .primary-link,
 .secondary-link {
   text-decoration: none;
   position: relative;
-  color: $primaryColor;
+  color: $primary-color;
   display: inline-block;
 }
+
 .primary-link:after,
 .secondary-link:after {
   content: "";
@@ -26,10 +29,12 @@ a {
   transform: scaleX(1);
   transition: 300ms ease-in-out;
 }
+
 .secondary-link:after {
   content: "";
-  background-color: $primaryColor;
+  background-color: $primary-color;
 }
+
 .primary-link,
 .secondary-link {
   &:hover {
@@ -38,24 +43,30 @@ a {
     }
   }
 }
+
 .link {
   text-decoration: none;
   transition: color 0.15s ease-in;
 }
+
 .link:link,
 .link:visited {
   transition: color 0.15s ease-in;
 }
+
 .link:hover {
   transition: color 0.15s ease-in;
 }
+
 .link:active {
   transition: color 0.15s ease-in;
 }
+
 .link:focus {
   transition: color 0.15s ease-in;
   outline: 1px dotted currentColor;
 }
+
 .cta-link {
   a {
     text-decoration: none;

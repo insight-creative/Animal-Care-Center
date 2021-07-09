@@ -1,4 +1,10 @@
 ---
 title: About
-description: Amplify Technologies provides professional commercial audiovisual (A/V), surveillance & DirecTV installation and expert local service in Kaukauna, Wisconsin.
+seo:
+  title: Veterinary Services in Buffalo Grove
+  description: Rely on Animal Care Center of Buffalo Grove hospital & laboratory for grooming, veterinary medicine, surgery, radiology, dental & emergency vet services.
+  featured_image:
+
+hero_image:
+  hero_image_jpg: animal-care-center-building-rendering.jpg
 ---

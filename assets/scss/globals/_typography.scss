@@ -4,10 +4,11 @@ input,
 select,
 optgroup,
 textarea {
-  font-family: $primaryFont;
+  font-family: $primary-font;
   font-size: $ic-300;
-  line-height: 3rem;
+  line-height: 1.5;
 }
+
 h1,
 h2,
 h3,
@@ -15,68 +16,73 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  line-height: 1.3em;
+  line-height: 1.2;
   margin-bottom: 0.65em;
 }
+
+p {
+  margin: 0;
+}
+
 .max-80 {
   max-width: $measure;
 }
+
 h1,
 .h1 {
   font-size: $ic-600;
 }
+
 h2,
 .h2 {
   font-size: $ic-500;
 }
+
 h3,
 .h3 {
   font-size: $ic-400;
 }
+
 h4,
 .h4 {
   font-size: $ic-300;
 }
+
 h5,
 .h5 {
   font-size: $ic-200;
 }
+
 h6,
 .h6 {
   font-size: $ic-200;
 }
+
 @include breakpoint(md) {
   h1,
   .h1 {
     font-size: $ic-700;
   }
+
   h2,
   .h2 {
     font-size: $ic-600;
   }
+
   h3,
   .h3 {
     font-size: $ic-500;
   }
+
   h4,
   .h4 {
     font-size: $ic-400;
   }
+
   h5,
   .h5 {
     font-size: $ic-300;
   }
-}
-p {
-  margin: 0 0 1rem;
-}
-
-.page-body > * + * {
-  margin-top: $ic-400;
-}
-
-ul {
-  line-height: 1.7rem;
 }
 
 article {
@@ -97,43 +103,31 @@ article {
     }
   }
 }
+
 .i {
   font-style: italic;
 }
+
 .b {
   font-weight: bold;
 }
+
 .shift-first {
   text-transform: capitalize;
 }
+
 .shift-up {
   text-transform: uppercase;
 }
-.fw4 {
-  font-weight: 400;
-}
-.fw5 {
-  font-weight: 500;
-}
-.fw6 {
-  font-weight: 600;
-}
-.fw7 {
-  font-weight: 700;
-}
-.fw8 {
-  font-weight: 800;
-}
-.fw9 {
-  font-weight: 900;
-}
+
 .no-margin {
   margin: 0;
 }
+
 .text-white {
   color: $white;
 }
-.heading-test {
-  background-color: tomato;
-  color: white;
+
+.text-primary {
+  color: $primary-color;
 }

@@ -10,12 +10,8 @@
 
     @include breakpoint(md) {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: $ic-400;
-    }
-
-    @include breakpoint(lg) {
       grid-template-columns: repeat(5, 1fr);
+      gap: $ic-400;
     }
   }
 

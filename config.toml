@@ -63,6 +63,42 @@ summaryLength = 30
     url  = "/services/"
     weight = 2
 
+  [[menu.main]]
+    parent = "Services"
+    name = "Wellness and Prevention"
+    weight = 1
+    url = "/services/wellness-and-prevention/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Laboratory"
+    weight = 2
+    url = "/services/laboratory/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Surgery"
+    weight = 3
+    url = "/services/surgery/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Dental Procedures"
+    weight = 4
+    url = "/services/dental-procedures/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Grooming"
+    weight = 5
+    url = "/services/grooming/"
+
+  [[menu.main]]
+    parent = "Services"
+    name = "Emergency Services"
+    weight = 6
+    url = "/services/emergency-services/"
+
 [[menu.main]]
     name = "About"
     url  = "/about/"
@@ -72,6 +108,13 @@ summaryLength = 30
     name = "Affiliated Hospitals"
     url  = "#"
     weight = 6
+
+  [[menu.main]]
+    parent = "Affiliated Hospitals"
+    name = "Barrington Animal Hospital"
+    weight = 1
+    url =  "https://barringtonanimalhospital.com/"
+    type = "external"
 
 [[menu.main]]
     name = "Contact"

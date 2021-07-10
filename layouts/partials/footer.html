@@ -1,14 +1,14 @@
 <footer id="footer" class="footer" role="contentinfo">
   <div class="footer__wrapper wrapper-wide">
     <div class="footer__map footer__column">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488611.90102004!2d-89.4692106687602!3d43.22112636948341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbde76f2a5f0d%3A0x9fe5b901c0017d96!2sAnimal%20Care%20Center%20of%20Buffalo%20Grove!5e0!3m2!1sen!2sus!4v1625790391612!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488611.90102004!2d-89.4692106687602!3d43.22112636948341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbde76f2a5f0d%3A0x9fe5b901c0017d96!2sAnimal%20Care%20Center%20of%20Buffalo%20Grove!5e0!3m2!1sen!2sus!4v1625790391612!5m2!1sen!2sus" width="400" height="400" style="border:0;" title="Map Location of Animal Care Center of Buffalo Grove" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="footer__contact footer__column">
-      <h5>Contact</h5>
+      <h3 class="h5">Contact</h3>
       <p>
         <a href="https://goo.gl/maps/jpVAJPVqqkYxVqaVA" target="_blank" rel="noopener">{{ .Site.Params.address }}<br></a>
         <div itemscope itemtype="http://schema.org/LocalBusiness">
-          <h2 itemprop="name" class="visually-hidden">Animal Care Center of Buffalo Grove</h2>
+          <h3 itemprop="name" class="visually-hidden">Animal Care Center of Buffalo Grove</h3>
             <span itemprop="telephone">
               <a href="tel:{{ .Site.Params.phone }}">
                 (847) 796-2420
@@ -19,13 +19,13 @@
       </p>
     </div>
     <div class="footer__hours footer__column">
-      <h5>Hours</h5>
+      <h3 class="h5">Hours</h3>
       <p>{{ .Site.Params.hoursMF }}<br>{{ .Site.Params.hoursSat }}</p>
     </div>
     <div class="footer__sitemap footer__column">
-      <h5>Site Map</h5>
+      <h3 class="h5">Site Map</h3>
         {{ with .Site.Menus.main }}
-        <ul class="footer__nav-list">
+        <ul class="footer__nav-list" role="list">
           {{ range . }}
             <li class="footer__nav-list-item">
               <a class="footer__nav-item" href="{{ .URL | absLangURL}}" aria-label="{{ .Name }}"
@@ -36,10 +36,10 @@
       {{ end }}
     </div>
     <div class="footer__social footer__column">
-      <h5>Connect</h5>
+      <h3 class="h5">Connect</h3>
         <div class="footer__social-grid">
-          <a href="https://www.facebook.com/animalcarecenterbg" target="_blank" rel="noopener noreferrer">{{ partial "svg-icons/facebook.svg" . }}</a>
-          <a href="https://www.instagram.com/animalcarecenterbg/" target="_blank" rel="noopener noreferrer">{{ partial "svg-icons/instagram.svg" . }}</a>
+          <a href="https://www.facebook.com/animalcarecenterbg" target="_blank" rel="noopener noreferrer" aria-label="facebook">{{ partial "svg-icons/facebook.svg" . }}</a>
+          <a href="https://www.instagram.com/animalcarecenterbg/" target="_blank" rel="noopener noreferrer" aria-label="instagram">{{ partial "svg-icons/instagram.svg" . }}</a>
         </div>
     </div>
   </div>

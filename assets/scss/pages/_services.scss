@@ -1,5 +1,9 @@
-.service {
-  &__description {
-    max-width: 30ch;
+.service-breakdown {
+  &__item {
+    padding-left: $ic-100;
+  }
+
+  &__item::marker {
+    content: url(/images/checkmark.svg);
   }
 }

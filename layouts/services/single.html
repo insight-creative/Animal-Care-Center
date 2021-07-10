@@ -5,9 +5,9 @@
         {{ with .Params.services_intro }}
         <h1 class="text-primary">{{ .heading }}</h1>
         <p>{{ .copy }}</p>
-        <ul>
+        <ul class="service-breakdown">
             {{ range .service_list }}
-            <li>{{ .service | markdownify }}</li>
+            <li class="service-breakdown__item">{{ .service | markdownify }}</li>
             {{ end }}
         </ul>
         {{ if .closing_copy }}

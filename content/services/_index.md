@@ -38,7 +38,7 @@ services:
     button_text: Learn More
     button_link: /services/grooming/
 
-  - heading: Emergency Care
+  - heading: Emergency Services
     copy: "Help is just a phone call away. We are available to see your pet urgently during business hours or can refer you to neighboring hospitals open nights and weekends."
     button_text: Learn More
     button_link: /services/emergency-services/

@@ -28,7 +28,7 @@
 .brand-logo {
   img {
     width: 100%;
-    max-width: 210px;
+    max-width: 160px;
 
     @include breakpoint(lg) {
       max-width: 300px;

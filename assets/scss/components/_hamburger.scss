@@ -1,5 +1,7 @@
 // Add Animation to our hamburger Menu
 .hamburger {
+  display: grid;
+  place-items: center;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -29,8 +31,8 @@
   background-color: $secondary-color;
 }
 .hamburger-box {
-  width: 30px;
-  height: 24px;
+  width: 25px;
+  height: 20px;
   display: inline-block;
   position: relative;
 }
@@ -42,7 +44,7 @@
 .hamburger-inner,
 .hamburger-inner:before,
 .hamburger-inner:after {
-  width: 30px;
+  width: 25px;
   height: 3px;
   background-color: $primary-color;
   border-radius: 4px;
@@ -69,13 +71,13 @@
   top: 2px;
 }
 .hamburger--slider .hamburger-inner::before {
-  top: 10px;
+  top: 8px;
   transition-property: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 0.15s;
 }
 .hamburger--slider .hamburger-inner::after {
-  top: 20px;
+  top: 16px;
 }
 
 .hamburger--slider.is-active .hamburger-inner {
@@ -86,5 +88,5 @@
   opacity: 0;
 }
 .hamburger--slider.is-active .hamburger-inner::after {
-  transform: translate3d(0, -20px, 0) rotate(-90deg);
+  transform: translate3d(0, -17px, 0) rotate(-90deg);
 }

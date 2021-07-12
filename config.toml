@@ -105,16 +105,9 @@ summaryLength = 30
     weight = 4
 
 [[menu.main]]
-    name = "Affiliated Hospitals"
-    url  = "#"
-    weight = 6
-
-  [[menu.main]]
-    parent = "Affiliated Hospitals"
-    name = "Barrington Animal Hospital"
-    weight = 1
-    url =  "https://barringtonanimalhospital.com/"
-    type = "external"
+    name = "Careers"
+    url  = "/careers/"
+    weight = 5
 
 [[menu.main]]
     name = "Contact"

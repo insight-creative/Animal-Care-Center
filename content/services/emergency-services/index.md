@@ -6,7 +6,7 @@ seo:
   featured_image:
 
 hero_image:
-  hero_image_jpg: animal-care-center-employees-with-dog.jpg
+  hero_image_jpg: animal-care-center-emergency-services.jpg
 
 services_intro:
   heading: Emergency Services

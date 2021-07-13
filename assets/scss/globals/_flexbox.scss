@@ -2,6 +2,23 @@
   display: flex;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
+
+.flex-container-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  @include breakpoint(lg) {
+    flex-direction: row;
+  }
+}
+
 .flex-wrap {
   display: flex;
   flex-direction: column;

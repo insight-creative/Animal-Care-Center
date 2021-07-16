@@ -1,23 +1,9 @@
 {{ define "main" }}
-{{ partial "blog/blog-hero" . }}
-{{ with site.Data.tips.intro }}
-  <div class="container text-center-m padding-top-4 padding-bottom-4">
-    <h1>{{ .heading }}</h1>
-    <p>{{ .copy }}</p>
-  </div>
-{{ end }}
-<section class="container-wide blog-container" data-scroll-section>
-  <div class="flex flex-column-reverse flex-row-m">
-    <div class="latest-posts flex flex-wrap w-100 w-70-m">
-      {{ $paginator := .Paginate ( where .Data.Pages "Type" "tech-tips") }}
-          {{ range $paginator.Pages }}
-      {{ partial "blog/blog-cards" . }}
-      {{ end }}
+{{ partial "hero" . }}
+<div class="wrapper">
+    <div class="block">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Content }}</p>
     </div>
-    <div class="w-100 w-30-m">
-      {{ partial "blog/blog-sidebar.html" . }}
-    </div>
-  </div>
-  {{ partial "blog/custom-pagination.html" . }}
-</section>
+</div>
 {{ end }}

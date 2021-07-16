@@ -1,7 +1,9 @@
 {{ define "main" }}
-{{ partial "blog/post-hero" . }}
-    <div class="container padding-top-4 padding-bottom-4">
-        {{ .Content  }}
-        {{ partial "blog/post-navigation" . }}
+{{ partial "hero" . }}
+<div class="wrapper">
+    <div class="block">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Content }}</p>
     </div>
+</div>
 {{ end }}

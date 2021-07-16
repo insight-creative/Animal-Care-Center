@@ -1,8 +1,25 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 <div class="wrapper">
-    <div class="block">
-        <h1>{{ .Title }}</h1>
+    <div class="block flow">
+        {{ with .Params.intro }}
+        <h1 class="text-primary heading-short">{{ .heading }}</h1>
+        <p>{{ .copy }}</p>
+        {{ end }}
     </div>
 </div>
+<div class="wrapper">
+    {{ with .Params.leadership }}
+        <h2 class="text-primary">{{ .heading }}</h2>
+    {{ end }}
+    {{ range .Params.team }}
+    <div class="block flow team">
+        <img src="{{ .headshot }}" alt="Headshot of {{ .title }} {{ .heading }}">
+        <strong>{{ .heading }}</strong>
+        <p>{{ .title }}</p>
+        {{ .copy | markdownify }}
+    </div>
+    {{ end }}
+</div>
+{{ partial "cta" (dict "heading" .Params.cta.heading "subhead" .Params.cta.subhead "button_text" .Params.cta.button_text "button_link" .Params.cta.button_link) }}
 {{ end }}

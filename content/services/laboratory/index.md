@@ -11,8 +11,8 @@ hero_image:
 services_intro:
   heading: Laboratory
   copy: "Because your pet can’t tell us what’s wrong, sometimes we must look below the
-surface to detect problems. Animal Care Center of Buffalo Grove offers full-service, in-house diagnostics and radiology for immediate answers, plus reference laboratory services off site for wellness and advanced screening.
-"
+  surface to detect problems. Animal Care Center of Buffalo Grove offers full-service, in-house diagnostics and radiology for immediate answers, plus reference laboratory services off site for wellness and advanced screening."
+  
   service_list:
     - service: "<strong>In-house bloodwork</strong><br>
     Complete blood count and chemistry to detect kidney disease, diabetes, anemia, thyroid problems, electrolyte imbalances or hydration status"

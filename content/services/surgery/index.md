@@ -10,10 +10,7 @@ hero_image:
 
 services_intro:
   heading: Surgery
-  copy: "Animal Care Center of Buffalo Grove provides routine and advanced surgical procedures. We
-recommend a complete medical workup prior to anesthesia to ensure the utmost
-level of safety for your pet. Our highly skilled doctors can perform many soft tissue and orthopedic procedures such as:
-"
+  copy: "Animal Care Center of Buffalo Grove provides routine and advanced surgical procedures. We recommend a complete medical workup prior to anesthesia to ensure the utmost level of safety for your pet. Our highly skilled doctors can perform many soft tissue and orthopedic procedures such as:"
   service_list:
     - service: Routine spay and neuter
     - service: Cystotomy for removal of bladder stones

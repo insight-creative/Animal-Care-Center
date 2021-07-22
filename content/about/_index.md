@@ -43,5 +43,5 @@ cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!
   button_text: Book Now
-  button_link: /contact/
+  button_link: /request-appointment/
 ---

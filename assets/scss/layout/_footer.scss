@@ -66,4 +66,10 @@
     width: $ic-600;
     fill: $white;
   }
+
+  &__affiliated {
+    img {
+      max-width: 200px;
+    }
+  }
 }

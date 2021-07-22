@@ -1,9 +1,17 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 <div class="wrapper">
-    <div class="block">
-        <h1>{{ .Title }}</h1>
-        <p>Please check back for future employment opportunities.</p>
+    <div class="block flow">
+        {{ with .Params.intro }}
+        <h1 class="text-primary">{{ .heading }}</h1>
+        <p>{{ .copy | markdownify }}</p>
+        <h2 class="text-primary">{{ .subhead }}</h2>
+        {{ end }}
+        <ul>
+            {{ range .Params.available_positions }}
+            <li>{{ .position }}</li>
+            {{ end }}
+        </ul>
     </div>
 </div>
 {{ end }}

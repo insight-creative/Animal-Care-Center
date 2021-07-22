@@ -11,7 +11,7 @@
           <h3 itemprop="name" class="visually-hidden">Animal Care Center of Buffalo Grove</h3>
             <span itemprop="telephone">
               <a href="tel:{{ .Site.Params.phone }}">
-                (847) 796-2420
+                {{ .Site.Params.phone }}
               </a>
             </span>
         </div>
@@ -40,6 +40,10 @@
         <div class="footer__social-grid">
           <a href="https://www.facebook.com/animalcarecenterbg" target="_blank" rel="noopener noreferrer" aria-label="facebook">{{ partial "svg-icons/facebook.svg" . }}</a>
           <a href="https://www.instagram.com/animalcarecenterbg/" target="_blank" rel="noopener noreferrer" aria-label="instagram">{{ partial "svg-icons/instagram.svg" . }}</a>
+        </div>
+        <div class="footer__affiliated">
+          <h3 class="h5">Affiliated Hospitals</h3>
+          <a href="https://barringtonanimalhospital.com/" target="_blank" rel="noopener noreferrer"><img src="/images/barrington-animal-hospital-website-logo.png" alt="Barrington Animal Hospital" class="dim"><span class="visually-hidden">Barrington Animal Hospital Website</span></a>
         </div>
     </div>
   </div>

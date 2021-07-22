@@ -27,12 +27,12 @@ about_block:
   copy: Our local staff brings decades of combined medical experience, strong educational backgrounds, a friendly approach and shared passion for animals.
   button_text: Meet Our Staff
   button_link: /about/
-  image: animal-care-center-employees.jpg
+  image: animal-care-center-placeholder-team.jpg
   image_alt: animal care center employees standing in lobby
 
 home_cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!
   button_text: Book Now
-  button_link: /contact/
+  button_link: /request-appointment/
 ---

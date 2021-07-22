@@ -10,7 +10,7 @@ summaryLength = 30
 #################### default parameters ################################
 
 [params]
-  logo = "images/logo.png"
+  logo = "images/animal-care-center-logo.png"
   # Meta data
   description = " "
   author = "Animal Care Center"

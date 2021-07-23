@@ -3,7 +3,6 @@ title: Emergency Services
 seo:
   title: Emergency Veterinary Services in Buffalo Grove, IL
   description: Animal Care Center Buffalo Grove offers vet urgent care & emergency service for dog, cat or pet bleeding, bloat, collapse, difficulty breathing or giving birth.
-  featured_image:
 
 hero_image:
   hero_image_jpg: animal-care-center-emergency-services.jpg

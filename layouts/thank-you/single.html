@@ -1,8 +1,7 @@
 {{ define "main" }}
-<section class="fade-wrapper padding-top-4 padding-bottom-4" data-scroll-section>
-    <div class="container">
-        <h2 class="g1">Thank you for your message. An {{ .Site.Params.author }} team member will contact you within two hours.</h2>
-        <span class="underline-left"></span>
+<section class="wrapper">
+    <div class="block flow">
+        <h2 class="g1">Thank you for your message. A {{ .Site.Data.business_info.business_name }} team member will respond shortly.</h2>
     </div>
 </section>
 {{ end }}

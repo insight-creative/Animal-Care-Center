@@ -7,4 +7,3 @@ type: thank-you
 ---
 
 Thank you for your message. A {{ site.Params.author }} team member will contact you within two hours.
-s

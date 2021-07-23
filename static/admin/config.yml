@@ -11,14 +11,20 @@ public_folder: "/blog"
 collections: # A list of collections the CMS should be able to edit
   - name: "site_info"
     label: "Site Info"
+    media_folder: "static/images/"
     editor:
       preview: false
     files:
-      - file: "/data/business-info.yml"
+      - file: "/data/business_info.yml"
         name: "business_info"
         label: "Business Info"
         fields:
+          - { label: Logo, name: logo, widget: image }
           - { label: Business Name, name: business_name, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Address, name: address, widget: text }
+          - { label: Hours, name: hours, widget: text }
 
   - name: "pages"
     preview_path: "layouts/home.html"
@@ -41,9 +47,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -117,6 +131,19 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
           - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
+                    widget: image,
+                  },
+                ],
+            }
+          - {
               label: "Services Intro",
               name: services_intro,
               widget: object,
@@ -151,9 +178,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -188,9 +223,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -225,9 +268,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -262,9 +313,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -299,9 +358,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -341,9 +408,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -406,12 +481,36 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
+            }
+          - {
+              label: "Intro",
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Copy", name: "copy", widget: "text" },
+                ],
+            }
+          - {
+              label: "Available Positions",
+              name: "available_positions",
+              widget: "list",
+              fields: [{ label: "Position", name: "position", widget: string }],
             }
       - file: "content/about/_index.md"
         label: "About"
@@ -426,9 +525,17 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
                 ],
@@ -474,10 +581,28 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Hero Image",
+              name: hero_image,
+              widget: object,
+              fields:
+                [
                   {
-                    label: "Featured Image",
-                    name: "featured_image",
+                    label: "Hero Image",
+                    name: "hero_image_jpg",
                     widget: image,
                   },
+                ],
+            }
+          - {
+              label: "Intro",
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Copy", name: "copy", widget: "text" },
                 ],
             }

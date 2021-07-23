@@ -3,7 +3,6 @@ title: Laboratory
 seo:
   title: Veterinary Laboratory Services in Buffalo Grove, IL
   description: Animal Care Center Buffalo Grove provides veterinary lab diagnostics, bloodwork, urine & stool analysis, X-ray, radiology, dental, ultrasound for animals & pets
-  featured_image:
 
 hero_image:
   hero_image_jpg: animal-care-center-lab-services.jpg

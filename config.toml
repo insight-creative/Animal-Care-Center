@@ -11,17 +11,6 @@ summaryLength = 30
 
 [params]
   logo = "images/animal-care-center-logo.png"
-  # Meta data
-  description = " "
-  author = "Animal Care Center"
-  # Contact Information
-  phone = "847-796-2420"
-  email = "animalcarecenterbg@gmail.com"
-  address = """
-    600 McHenry Rd.
-    Buffalo Grove, IL 60089"""
-  hoursMF = "Monday-Friday 6am-6pm"
-  hoursSat = "Saturday 8am-noon"
   disallowSearchEngines = true
   # Google Analitycs
   googleAnalytics = " " # Your ID# search 

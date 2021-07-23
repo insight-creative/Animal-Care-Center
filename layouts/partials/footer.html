@@ -6,21 +6,21 @@
     <div class="footer__contact footer__column">
       <h3 class="h5">Contact</h3>
       <p>
-        <a href="https://goo.gl/maps/jpVAJPVqqkYxVqaVA" target="_blank" rel="noopener">{{ .Site.Params.address }}<br></a>
+        <a href="https://goo.gl/maps/jpVAJPVqqkYxVqaVA" target="_blank" rel="noopener">{{ .Site.Data.business_info.address | markdownify }}<br></a>
         <div itemscope itemtype="http://schema.org/LocalBusiness">
           <h3 itemprop="name" class="visually-hidden">Animal Care Center of Buffalo Grove</h3>
             <span itemprop="telephone">
-              <a href="tel:{{ .Site.Params.phone }}">
-                {{ .Site.Params.phone }}
+              <a href="tel:{{ .Site.Data.business_info.phone }}">
+                {{ .Site.Data.business_info.phone }}
               </a>
             </span>
         </div>
-        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        <a href="mailto:{{ .Site.Data.business_info.email }}">{{ .Site.Data.business_info.email }}</a>
       </p>
     </div>
     <div class="footer__hours footer__column">
       <h3 class="h5">Hours</h3>
-      <p>{{ .Site.Params.hoursMF }}<br>{{ .Site.Params.hoursSat }}</p>
+      <p>{{ .Site.Data.business_info.hours | markdownify }}</p>
     </div>
     <div class="footer__sitemap footer__column">
       <h3 class="h5">Site Map</h3>
@@ -43,7 +43,7 @@
         </div>
         <div class="footer__affiliated">
           <h3 class="h5">Affiliated Hospitals</h3>
-          <a href="https://barringtonanimalhospital.com/" target="_blank" rel="noopener noreferrer"><img src="/images/barrington-animal-hospital-website-logo.png" alt="Barrington Animal Hospital" class="dim"><span class="visually-hidden">Barrington Animal Hospital Website</span></a>
+          <a href="https://barringtonanimalhospital.com/" target="_blank" rel="noopener noreferrer"><img src="/images/barrington-animal-hospital-website-logo.jpg" alt="Barrington Animal Hospital" class="dim"><span class="visually-hidden">Barrington Animal Hospital Website</span></a>
         </div>
     </div>
   </div>

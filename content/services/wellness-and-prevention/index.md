@@ -3,7 +3,6 @@ title: Wellness and Prevention
 seo:
   title: Wellness and Prevention Services in Buffalo Grove, IL
   description: Animal Care Center Buffalo Grove offers wellness screening & prevention veterinary exams for vaccines, dental, heartworm testing, stool analysis & euthanasia.
-  featured_image:
 
 hero_image:
   hero_image_jpg: animal-care-center-wellness-services.jpg

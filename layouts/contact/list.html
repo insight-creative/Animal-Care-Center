@@ -2,7 +2,10 @@
 {{ partial "hero" . }}
 <div class="wrapper">
     <div class="block">
-        <h1>{{ .Title }}</h1>
+        {{ with .Params.intro }}
+        <h1 class="text-primary">{{ .heading }}</h1>
+        <p>{{ .copy | markdownify }}</p>
+        {{ end }}
     </div>
     <div class="contact-form block">
       <div class="contact-form__wrapper">

@@ -3,7 +3,6 @@ title: Surgery
 seo:
   title: Veterinary Surgery & Surgical Procedures in Buffalo Grove, IL
   description: Animal Care Center Buffalo Grove for veterinary surgery & surgical procedures including spay & neuter, amputation, tumor removal, cat declaw & orthopedic care.
-  featured_image:
 
 hero_image:
   hero_image_jpg: animal-care-center-surgery-services.jpg

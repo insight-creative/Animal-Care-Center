@@ -251,7 +251,7 @@ collections: # A list of collections the CMS should be able to edit
                     name: "service_list",
                     widget: "list",
                     fields:
-                      [{ label: "Service", name: "service", widget: string }],
+                      [{ label: "Service", name: "service", widget: markdown }],
                   },
                 ],
             }

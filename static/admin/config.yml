@@ -9,6 +9,17 @@ media_folder: "static/images/blog" # Folder where user uploaded files should go
 public_folder: "/blog"
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "site_info"
+    label: "Site Info"
+    editor:
+      preview: false
+    files:
+      - file: "/data/business-info.yml"
+        name: "business_info"
+        label: "Business Info"
+        fields:
+          - { label: Business Name, name: business_name, widget: string }
+
   - name: "pages"
     preview_path: "layouts/home.html"
     label: "Pages"
@@ -351,6 +362,34 @@ collections: # A list of collections the CMS should be able to edit
                     widget: "list",
                     fields:
                       [{ label: "Service", name: "service", widget: string }],
+                  },
+                  {
+                    label: "Closing Copy",
+                    name: "closing_copy",
+                    widget: "text",
+                  },
+                  {
+                    label: "Emergency Clinics",
+                    name: "emergency_clinics",
+                    widget: "list",
+                    fields:
+                      [
+                        {
+                          label: "Clinic Name",
+                          name: "clinic_name",
+                          widget: string,
+                        },
+                        {
+                          label: "Clinic Address",
+                          name: "clinic_address",
+                          widget: text,
+                        },
+                        {
+                          label: "Clinic Phone",
+                          name: "clinic_phone",
+                          widget: string,
+                        },
+                      ],
                   },
                 ],
             }

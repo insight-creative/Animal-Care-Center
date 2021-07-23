@@ -565,7 +565,7 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Heading", name: "heading", widget: string },
                   { label: "Title", name: "title", widget: string },
                   { label: Headshot, name: headshot, widget: image },
-                  { label: "Copy", name: "copy", widget: "text" },
+                  { label: "Copy", name: "copy", widget: markdown },
                 ],
             }
       - file: "content/contact/_index.md"

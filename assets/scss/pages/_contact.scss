@@ -13,6 +13,7 @@
     width: 100%;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
+    border-bottom: 2px solid $primary-color;
   }
 
   &__form-group input {
@@ -41,5 +42,11 @@
 
   &__btn {
     border: none;
+  }
+}
+
+.contact-sidebar {
+  @include breakpoint(md) {
+    margin-left: 2rem;
   }
 }

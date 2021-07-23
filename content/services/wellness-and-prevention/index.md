@@ -20,5 +20,5 @@ services_intro:
     - service: Puppy and kitten care
     - service: Dental health
     - service: Travel needs
-    - service: Compassionate end of life services
+    - service: Compassionate end-of-life services
 ---

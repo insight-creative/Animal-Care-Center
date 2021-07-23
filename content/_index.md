@@ -1,7 +1,7 @@
 ---
 title: Home
 seo:
-  title: Veterinary Services in Buffalo Grove
+  title: Veterinary Services in Buffalo Grove, IL
   description: Rely on Animal Care Center of Buffalo Grove hospital & laboratory
     for grooming, veterinary medicine, surgery, radiology, dental & emergency
     vet services.

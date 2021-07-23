@@ -1,7 +1,7 @@
 ---
 title: Grooming
 seo:
-  title: Veterinary Dental Procedures in Buffalo Grove, IL
+  title: Animal Grooming Services in Buffalo Grove, IL
   description: Animal Care Center Buffalo Grove offers veterinary care & dog or cat spa grooming services such as bath, dry, brushout, haircut, trims, hair color & vet exams.
 
 hero_image:

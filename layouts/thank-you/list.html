@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="wrapper">
+    <div class="block flow">
+        {{ with .Params.intro }}
+        <h1 class="text-primary">{{ .heading }}</h1>
+        <p>{{ .copy | markdownify }}</p>
+        <h2 class="text-primary">{{ .subhead }}</h2>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 title: Careers
 seo:
-  title: Veterinary Careers in Buffalo Grove
+  title: Veterinary Careers in Buffalo Grove, IL
   description: Rely on Animal Care Center of Buffalo Grove hospital & laboratory for grooming, veterinary medicine, surgery, radiology, dental & emergency vet services.
 
 hero_image:

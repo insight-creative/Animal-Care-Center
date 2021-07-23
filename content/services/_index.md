@@ -1,7 +1,7 @@
 ---
 title: Services
 seo:
-  title: Veterinary Services in Buffalo Grove
+  title: Veterinary Services in Buffalo Grove, IL
   description: Rely on Animal Care Center of Buffalo Grove hospital & laboratory for grooming, veterinary medicine, surgery, radiology, dental & emergency vet services.
 
 hero_image:
@@ -38,7 +38,7 @@ services:
     button_link: /services/grooming/
 
   - heading: Emergency Services
-    copy: "Help is just a phone call away. We are available to see your pet urgently during business hours or can refer you to neighboring hospitals open nights and weekends."
+    copy: "Help is just a phone call away. We are available to see your pet urgently during business hours or can refer you to neighboring hospitals that are open on nights and weekends."
     button_text: Learn More
     button_link: /services/emergency-services/
 ---

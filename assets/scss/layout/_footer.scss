@@ -15,14 +15,6 @@
     }
   }
 
-  iframe {
-    height: 20rem;
-
-    @include breakpoint(md) {
-      height: 16rem;
-    }
-  }
-
   a {
     color: $white;
     text-decoration: none;
@@ -70,6 +62,17 @@
   &__affiliated {
     img {
       max-width: 200px;
+    }
+  }
+}
+
+.footer,
+.contact-sidebar {
+  iframe {
+    height: 20rem;
+
+    @include breakpoint(md) {
+      height: 16rem;
     }
   }
 }

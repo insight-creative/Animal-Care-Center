@@ -1,41 +1,57 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 <div class="wrapper">
-    <div class="block">
-        {{ with .Params.intro }}
-        <h1 class="text-primary">{{ .heading }}</h1>
-        <p>{{ .copy | markdownify }}</p>
-        {{ end }}
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-60-m">
+            <div class="block flow">
+                {{ with .Params.intro }}
+                <h1 class="text-primary">{{ .heading }}</h1>
+                <p>{{ .copy | markdownify }}</p>
+                {{ end }}
+            </div>
+            <div class="contact-form block">
+              <div class="contact-form__wrapper">
+                  <form name="Animal Care Center Contact Form" netlify netlify-honeypot="bot-field" action="/thank-you">
+                      <div hidden>
+                          <label>
+                            Don’t fill this out if you're human: 
+                            <input name="bot-field" />
+                          </label>
+                      </div>
+                      <div class="contact-form__form-group">
+                          <label for="name">Name*</label>
+                          <input aria-label="name" name="name" type="name" class="contact-form__form-control" required>
+                      </div>
+                      <div class="contact-form__form-group">
+                          <label for="_replyto">Email*</label>
+                          <input aria-label="email" name="_replyto" type="email" class="contact-form__form-control" required>
+                      </div>
+                      <div class="contact-form__form-group">
+                          <label for="phone">Phone*</label>
+                          <input aria-label="phone" name="phone" type="phone" class="contact-form__form-control" required>
+                      </div>
+                      <div class="contact-form__form-group">
+                          <label for="message">Message*</label>
+                          <textarea aria-label="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
+                      </div>
+                      <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                      <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Message</button>
+                  </form>
+              </div>
+          </div>
+        </div>
+        <div class="w-100 w-40-m">
+            <div class="contact-sidebar block flow">
+                <h2 class="h4 text-primary">{{ .Site.Data.business_info.business_name }}</h2>
+                <div class="contact-sidebar__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488611.90102004!2d-89.4692106687602!3d43.22112636948341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbde76f2a5f0d%3A0x9fe5b901c0017d96!2sAnimal%20Care%20Center%20of%20Buffalo%20Grove!5e0!3m2!1sen!2sus!4v1625790391612!5m2!1sen!2sus" width="400" height="400" style="border:0;" title="Map Location of Animal Care Center of Buffalo Grove" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p>{{ .Site.Data.business_info.address | markdownify }}<br>
+                <a href="tel:{{ .Site.Data.business_info.phone }}">{{ .Site.Data.business_info.phone }}</a><br>
+                <a href="mailto:{{ .Site.Data.business_info.email }}">{{ .Site.Data.business_info.email }}</a></p>
+                <a href="https://goo.gl/maps/jpVAJPVqqkYxVqaVA" target="_blank" rel="noopener" class="btn btn-secondary">Get Directions</a>
+            </div>
+        </div>
     </div>
-    <div class="contact-form block">
-      <div class="contact-form__wrapper">
-          <form name="Boutique Hearing Consultation Request Form" netlify netlify-honeypot="bot-field" action="/thank-you">
-              <div hidden>
-                  <label>
-                    Don’t fill this out if you're human: 
-                    <input name="bot-field" />
-                  </label>
-              </div>
-              <div class="contact-form__form-group">
-                  <label for="name">Name*</label>
-                  <input aria-label="name" name="name" type="name" class="contact-form__form-control" required>
-              </div>
-              <div class="contact-form__form-group">
-                  <label for="_replyto">Email*</label>
-                  <input aria-label="email" name="_replyto" type="email" class="contact-form__form-control" required>
-              </div>
-              <div class="contact-form__form-group">
-                  <label for="phone">Phone*</label>
-                  <input aria-label="phone" name="phone" type="phone" class="contact-form__form-control" required>
-              </div>
-              <div class="contact-form__form-group">
-                  <label for="message">Message*</label>
-                  <textarea aria-label="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
-              </div>
-              <div style="margin-bottom: 1em;" netlify-recaptcha></div>
-              <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Message</button>
-          </form>
-      </div>
-  </div>
 </div>
 {{ end }}

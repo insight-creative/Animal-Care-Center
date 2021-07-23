@@ -48,4 +48,10 @@ team:
       * **Most rewarding work experience:** I love being able to see and talk to clients as well as get to see all their cute furry friends.
 
       * **Education:** Bachelor’s degree in psychology
+
+cta:
+  heading: Come, Sit, Heal.
+  subhead: Schedule an appointment online!
+  button_text: Book Now
+  button_link: /request-appointment/
 ---

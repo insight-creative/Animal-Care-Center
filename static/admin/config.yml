@@ -110,6 +110,18 @@ collections: # A list of collections the CMS should be able to edit
                   },
                 ],
             }
+          - {
+              label: "Homepage CTA",
+              name: home_cta,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Subhead", name: "subhead", widget: string },
+                  { label: "Button Text", name: "button_text", widget: string },
+                  { label: "Button Link", name: "button_link", widget: string },
+                ],
+            }
       - file: "content/services/_index.md"
         label: "Services"
         name: "services"
@@ -566,6 +578,18 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Title", name: "title", widget: string },
                   { label: Headshot, name: headshot, widget: image },
                   { label: "Copy", name: "copy", widget: markdown },
+                ],
+            }
+          - {
+              label: "About CTA",
+              name: cta,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Subhead", name: "subhead", widget: string },
+                  { label: "Button Text", name: "button_text", widget: string },
+                  { label: "Button Link", name: "button_link", widget: string },
                 ],
             }
       - file: "content/contact/_index.md"

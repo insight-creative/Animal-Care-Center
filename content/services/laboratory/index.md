@@ -14,31 +14,51 @@ services_intro:
     full-service, in-house diagnostics and radiology for immediate answers, plus
     reference laboratory services off site for wellness and advanced screening.
   service_list:
-    - service: <strong>In-house bloodwork</strong><br>     Complete blood count and
-        chemistry to detect kidney disease, diabetes, anemia, thyroid problems,
-        electrolyte imbalances or hydration status
-    - service: <strong>In-house urinalysis</strong><br>     Detects urinary tract
-        infections, kidney and endocrine disorders
-    - service: <strong>In-house cytology</strong><br>     Used to diagnose ear
-        infections and skin problems
-    - service: <strong>Reference laboratory</strong><br>     <ul>     <li>Routine
-        annual wellness bloodwork including heartworm tests</li>     <li>Fecal
-        analysis to rule out stool parasites</li>     <li>Cytology and biopsy
-        reports, often to diagnose tumors or cancers</li>     </ul>
-    - service: "<strong>In-house digital radiology</strong><br>     X-rays taken
-        within seconds to diagnose a variety of systemic diseases
-        including:     <ul>     <li>Cardiac or pulmonary
-        disease</li>     <li>Foreign objects in the stomach or
-        intestines</li>     <li>Bladder stones</li>     <li>Bone
-        fractures</li>     <li>Arthritis</li>     <li>Gastric dilatation and
-        volvulus (life-threatening flipped stomach)</li>     </ul>"
-    - service: "<strong>In-house digital dental radiology</strong><br>     While under
-        anesthesia for dental work, your pet can also get full-mouth X-rays to
-        diagnose:     <ul>     <li>Tooth fractures</li>     <li>Tooth root
-        abscesses</li>     <li>Retained baby teeth</li>     <li>Bone loss under
-        the gum line</li>     <li>Bone tumors</li>     </ul>"
-    - service: <strong>In-house ultrasound</strong><br>     Ultrasound is used to
-        image soft tissue structures to look for tumors, internal bleeding,
-        fluid pockets, heart disease and more. This is especially useful in
-        patients who are sick or suddenly very ill.
+    - service: "**In-house bloodwork**<br>     Complete blood count and chemistry to
+        detect kidney disease, diabetes, anemia, thyroid problems, electrolyte
+        imbalances or hydration status"
+    - service: "**In-house urinalysis**<br>     Detects urinary tract infections,
+        kidney and endocrine disorders"
+    - service: "**In-house cytology**<br>     Used to diagnose ear infections and skin
+        problems"
+    - service: |-
+        **Reference laboratory**<br>     
+
+        * Routine annual wellness bloodwork including heartworm tests
+        * Fecal analysis to rule out stool parasites
+        * Cytology and biopsy reports, often to diagnose tumors or cancers
+    - service: >-
+        **In-house digital radiology**<br>     X-rays taken within seconds to
+        diagnose a variety of systemic diseases including:     
+
+
+        * Cardiac or pulmonary disease
+
+        * Foreign objects in the stomach or intestines
+
+        * Bladder stones
+
+        * Bone fractures
+
+        * Arthritis
+
+        * Gastric dilatation and volvulus (life-threatening flipped stomach)
+    - service: >-
+        **In-house digital dental radiology**<br>     While under anesthesia for
+        dental work, your pet can also get full-mouth X-rays to diagnose:     
+
+
+        * Tooth fractures
+
+        * Tooth root abscesses
+
+        * Retained baby teeth
+
+        * Bone loss under the gum line
+
+        * Bone tumors
+    - service: "**In-house ultrasound**<br>     Ultrasound is used to image soft
+        tissue structures to look for tumors, internal bleeding, fluid pockets,
+        heart disease and more. This is especially useful in patients who are
+        sick or suddenly very ill."
 ---

@@ -7,6 +7,8 @@ seo:
     vet services.
 hero_image:
   hero_image_jpg: animal-care-center-building-rendering.jpg
+  hero_image_jpg_2: animal-care-center-building-rendering.jpg
+  hero_image_jpg_3: animal-care-center-building-rendering.jpg
 intro:
   heading: Your love. Their loyalty. Our passion.
   copy: We understand the special connection you share with your animal. That’s

@@ -4,17 +4,10 @@ title = "Animal Care Center of Buffalo Grove"
 googleAnalytics = "G-5B9MTSYBCL"
 enableRobotsTXT = true
 disableAliases = true
-# post pagination
-paginate = "6"
-summaryLength = 30
 
 #################### default parameters ################################
 
 [params]
-  logo = "images/animal-care-center-logo.png"
-  disallowSearchEngines = true
-  # Google Analitycs
-  googleAnalytics = " " # Your ID# search 
   minifyBundles = true
 
 # add redirects/headers

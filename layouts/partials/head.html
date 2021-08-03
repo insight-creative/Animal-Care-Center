@@ -20,11 +20,12 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ .Params.seo.title }}">
-    <meta name="twitter:description" content="{{ .Params.seo.description }}">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ site.BaseURL }}images/{{ .Site.Data.business_info.logo }}{{ end }}">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ .Params.seo.title }}">
+    <meta property="twitter:description" content="{{ .Params.seo.description }}">
+    <meta property="twitter:site" content="@">
+    <meta property="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ site.BaseURL }}images/{{ .Site.Data.business_info.logo }}{{ end }}">
 
     {{ with resources.Get "scss/critical.scss" | toCSS | resources.PostCSS | minify }}
     <style>{{ .Content | safeCSS }}</style>

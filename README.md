@@ -1,10 +1,10 @@
 # Animal Care Center of Buffalo Grove
 
-Built from the Insight Creative, Inc. Hugo starter boilerplate Quintessence. The [Hugo](https://gohugo.io/) boilerplate we use for our projects.
+A custom Hugo website built from the Insight Creative, Inc. Hugo starter boilerplate Quintessence. The [Hugo](https://gohugo.io/) boilerplate we use for our projects.
 
-The repo for this site can be found at https://github.com/insight-creative/Animal-Care-Center
+The repo for the boilerplate can be found at https://github.com/insight-creative/Quintessence
 
-**Disclaimer** - This site has been heavily integrated with [Netlify](https://www.netlify.com/), and therefore many features are specific to the Netlify platform and may not work with other hosting providers.
+**Disclaimer** - This site has been heavily integrated with [Netlify](https://www.netlify.com/), and therefore many features are specific to the Netlify platform and may not work with other hosting providers. This site also uses [NetlifyCMS](https://www.netlifycms.org/) as a CMS. Make sure to run a git pull before starting any work in case the client has made changes on their end. 
 
 ## Getting Started
 
@@ -62,8 +62,11 @@ Simple as that, you can now start building everything you need. Hugo's server ha
 │   │   │ single.html        - Singular page/post template
 │   │
 │   └──── /partials          - Partials
-│       │ header.html    - Sites primary <header>
-│       │ footer.html    - Sites primary <footer>
+│   |   │ footer.html        - Sites primary <footer>
+│   |   │ head.html          - Sites primary head section, containing SEO data, stylesheet configurations and more
+│   |   │ header.html        - Sites primary <header>
+│   |   │ cta.html           - Sites primary cta block
+│   |   │ scripts.html       - Sites primary scripts and JS processing/pipes setup
 │   │
 │   └──── /static            - Hugo static resources
 |       | admin              - Configuration for Netlify CMS

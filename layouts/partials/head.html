@@ -7,14 +7,14 @@
 
     <meta itemprop="name" content="{{ .Title }}">
     <meta itemprop="description" content="{{ .Params.seo.description }}">
-    <meta itemprop="image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Permalink }}{{ site.Params.logo }}{{ end }}">
+    <meta itemprop="image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Permalink }}{{ .Site.Data.business_info.logo }}{{ end }}">
 
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title  | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Permalink }}{{ site.Params.logo }}{{ end }}">
+    <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Permalink }}{{ .Site.Data.business_info.logo }}{{ end }}">
     <meta property="og:description" content="{{ .Params.seo.description }}">
     <meta name="description" content="{{ .Params.seo.description }}">
 
@@ -48,6 +48,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 
     {{ template "_internal/google_analytics.html" . }}
-    
+
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

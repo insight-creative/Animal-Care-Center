@@ -25,8 +25,8 @@ services_block:
     roof.
   button_text: View Our Services
   button_link: https://www.animalcarebg.com/services/
-  image: animal-care-center-employee-with-dog.jpg
-  image_alt: animal care center employee face to face with a dog
+  image: img_5905.jpg
+  image_alt: animal care center lobby design
 about_block:
   heading: Animal Lovers for Animal Lovers
   copy: Our local staff brings decades of combined medical experience, strong

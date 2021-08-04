@@ -21,7 +21,7 @@ leadership:
 team:
   - heading: Jake Levin, DVM
     title: Veterinarian/Medical Director
-    headshot: PhotoToCome.jpg
+    headshot: img_4253-1-.jpeg
     copy: >-
       * **Related work experience:** Began general practice in 2008
 
@@ -48,7 +48,6 @@ team:
       * **Most rewarding work experience:** I love being able to see and talk to clients as well as get to see all their cute furry friends.
 
       * **Education:** Bachelor’s degree in psychology
-
 cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!

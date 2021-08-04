@@ -6,7 +6,7 @@ seo:
     diagnostics, bloodwork, urine & stool analysis, X-ray, radiology, dental,
     ultrasound for animals & pets
 hero_image:
-  hero_image_jpg: animal-care-center-lab-services.jpg
+  hero_image_jpg: img_5864.jpg
 services_intro:
   heading: Laboratory
   copy: Because your pet can’t tell us what’s wrong, sometimes we must look below

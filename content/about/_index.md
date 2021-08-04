@@ -21,7 +21,7 @@ leadership:
 team:
   - heading: Jake Levin, DVM
     title: Veterinarian/Medical Director
-    headshot: img_4253-1-.jpeg
+    headshot: drlevin.jpeg
     copy: >-
       * **Related work experience:** Began general practice in 2008
 

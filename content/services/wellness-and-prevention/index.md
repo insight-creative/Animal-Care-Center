@@ -6,7 +6,7 @@ seo:
     prevention veterinary exams for vaccines, dental, heartworm testing, stool
     analysis & euthanasia.
 hero_image:
-  hero_image_jpg: img_5840.jpg
+  hero_image_jpg: img_5841.jpg
 services_intro:
   heading: Wellness and Prevention
   copy: Keeping your pet on the path to wellness, Animal Care Center of Buffalo

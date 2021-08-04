@@ -11,7 +11,7 @@ public_folder: "/blog"
 collections: # A list of collections the CMS should be able to edit
   - name: "site_info"
     label: "Site Info"
-    media_folder: "static/images/"
+    media_folder: "/static/images/"
     editor:
       preview: false
     files:

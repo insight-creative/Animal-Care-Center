@@ -1,5 +1,15 @@
 .hero {
   position: relative;
+  height: 30vh;
+
+  @include breakpoint(md) {
+    height: 60vh;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+  }
 
   svg {
     max-width: 100vw;

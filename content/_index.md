@@ -25,7 +25,7 @@ services_block:
     roof.
   button_text: View Our Services
   button_link: https://www.animalcarebg.com/services/
-  image: img_5905.jpg
+  image: animal-care-center-front-lobby.jpg
   image_alt: animal care center lobby design
 about_block:
   heading: Animal Lovers for Animal Lovers

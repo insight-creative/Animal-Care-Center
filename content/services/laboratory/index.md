@@ -6,20 +6,24 @@ seo:
     diagnostics, bloodwork, urine & stool analysis, X-ray, radiology, dental,
     ultrasound for animals & pets
 hero_image:
-  hero_image_jpg: img_5864.jpg
+  hero_image_jpg: animal-care-center-lab-services.jpg
 services_intro:
   heading: Laboratory
-  copy: Because your pet can’t tell us what’s wrong, sometimes we must look below
+  copy:
+    Because your pet can’t tell us what’s wrong, sometimes we must look below
     the surface to detect problems. Animal Care Center of Buffalo Grove offers
     full-service, in-house diagnostics and radiology for immediate answers, plus
     reference laboratory services off site for wellness and advanced screening.
   service_list:
-    - service: "**In-house bloodwork**<br>     Complete blood count and chemistry to
+    - service:
+        "**In-house bloodwork**<br>     Complete blood count and chemistry to
         detect kidney disease, diabetes, anemia, thyroid problems, electrolyte
         imbalances or hydration status"
-    - service: "**In-house urinalysis**<br>     Detects urinary tract infections,
+    - service:
+        "**In-house urinalysis**<br>     Detects urinary tract infections,
         kidney and endocrine disorders"
-    - service: "**In-house cytology**<br>     Used to diagnose ear infections and skin
+    - service:
+        "**In-house cytology**<br>     Used to diagnose ear infections and skin
         problems"
     - service: |-
         **Reference laboratory**<br>     

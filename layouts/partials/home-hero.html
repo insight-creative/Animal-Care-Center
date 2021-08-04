@@ -1,0 +1,6 @@
+{{ $heroClass := lower .Page.Title }}
+<div class="hero {{ anchorize $heroClass }}-hero">
+      <img id="random-hero-image" alt="" width="2000" height="650" class="hero__image" loading="lazy">
+      {{ partial "svg-icons/ekg-green.svg" . }}
+    </picture>
+</div>

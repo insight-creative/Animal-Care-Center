@@ -5,8 +5,8 @@ backend:
 
 logo_url: https://animal-care-center.netlify.app/images/animal-care-center-logo.png
 
-media_folder: "static/images/blog" # Folder where user uploaded files should go
-public_folder: "/blog"
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: ""
 
 collections: # A list of collections the CMS should be able to edit
   - name: "site_info"

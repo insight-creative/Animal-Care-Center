@@ -12,6 +12,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "site_info"
     label: "Site Info"
     media_folder: "/static/images/"
+    public_folder: "/static/images/"
     editor:
       preview: false
     files:

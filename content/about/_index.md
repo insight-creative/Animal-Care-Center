@@ -21,7 +21,7 @@ leadership:
 team:
   - heading: Jake Levin, DVM
     title: Veterinarian/Medical Director
-    headshot: drlevin.jpeg
+    headshot: jake-31-1-.jpg
     copy: >-
       * **Related work experience:** Began general practice in 2008
 
@@ -36,7 +36,7 @@ team:
       * **Education:** Doctorate in Veterinary Medicine from University of Illinois, Urbana Member of the CVMA, AVMA, VIN
   - heading: Lexi Mills
     title: Hospital Manager
-    headshot: PhotoToCome.jpg
+    headshot: lizzy-color_297-2-copy-1-.jpg
     copy: >-
       * **Job responsibilities:** Ensuring the hospital runs smoothly and
       efﬁciently for our clients and team members. Administrative work.
@@ -48,6 +48,10 @@ team:
       * **Most rewarding work experience:** I love being able to see and talk to clients as well as get to see all their cute furry friends.
 
       * **Education:** Bachelor’s degree in psychology
+  - heading: Annette Flynn
+    title: Groomer
+    headshot: annette-17-1-.jpg
+    copy: "**Bio to come**"
 cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!

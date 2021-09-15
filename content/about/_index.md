@@ -48,10 +48,6 @@ team:
       * **Most rewarding work experience:** I love being able to see and talk to clients as well as get to see all their cute furry friends.
 
       * **Education:** Bachelor’s degree in psychology
-  - heading: Annette Flynn
-    title: Groomer
-    headshot: annette-17-1-.jpg
-    copy: "**Bio to come**"
 cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!

@@ -21,8 +21,7 @@ intro:
 services_block:
   heading: Full-service Veterinary Care
   copy: From routine checkups and grooming to vaccinations, X-rays, surgery and
-    more, we provide complete care for dogs, cats and exotic pets under one
-    roof.
+    more, we provide comprehensive medical care for both cats and dogs.
   button_text: View Our Services
   button_link: https://www.animalcarebg.com/services/
   image: animal-care-center-front-lobby.jpg

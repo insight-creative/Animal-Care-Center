@@ -1,4 +1,4 @@
-<footer id="footer" class="footer" role="contentinfo">
+<footer id="footer" class="footer">
   <div class="footer__wrapper wrapper-wide">
     <div class="footer__map footer__column">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488611.90102004!2d-89.4692106687602!3d43.22112636948341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbde76f2a5f0d%3A0x9fe5b901c0017d96!2sAnimal%20Care%20Center%20of%20Buffalo%20Grove!5e0!3m2!1sen!2sus!4v1625790391612!5m2!1sen!2sus" width="400" height="400" style="border:0;" title="Map Location of Animal Care Center of Buffalo Grove" allowfullscreen="" loading="lazy"></iframe>
@@ -25,7 +25,7 @@
     <div class="footer__sitemap footer__column">
       <h3 class="h5">Site Map</h3>
         {{ with .Site.Menus.main }}
-        <ul class="footer__nav-list" role="list">
+        <ul class="footer__nav-list">
           {{ range . }}
             <li class="footer__nav-list-item">
               <a class="footer__nav-item" href="{{ .URL | absLangURL}}" aria-label="{{ .Name }}"

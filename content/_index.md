@@ -37,6 +37,6 @@ about_block:
 home_cta:
   heading: Come, Sit, Heal.
   subhead: Schedule an appointment online!
-  button_text: Book Now
-  button_link: https://www.animalcarebg.com/request-appointment/
+  button_text: Online Pharmacy
+  button_link: https://accbuffalogrove.vetsfirstchoice.com/
 ---

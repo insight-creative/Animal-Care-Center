@@ -36,7 +36,7 @@ about_block:
   image_alt: animal care center employees standing in lobby
 home_cta:
   heading: Come, Sit, Heal.
-  subhead: Schedule an appointment online!
+  subhead: " "
   button_text: Online Pharmacy
   button_link: https://accbuffalogrove.vetsfirstchoice.com/
 ---

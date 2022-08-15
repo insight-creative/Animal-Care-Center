@@ -19,21 +19,6 @@ intro:
 leadership:
   heading: Meet our Leadership Team
 team:
-  - heading: Jake Levin, DVM
-    title: Veterinarian/Medical Director
-    headshot: jake-31-1-.jpg
-    copy: >-
-      * **Related work experience:** Began general practice in 2008
-
-      * **Passions:** I love being able to help all different kinds of sick dogs and cats and improve the lives of animals in my hometown. I was raised in this community, and I am extremely happy to be able to give back.
-
-      * **Ask me about my pets:** Buster, a shih tzu mix and Dash, a Siberian cat
-
-      * **Hobbies:** Sports – baseball, bicycling and whirlyball
-
-      * **Most rewarding work experience:** Working with the North Suburban Specialty Recreational Association teaching sports and science to children with disabilities.
-
-      * **Education:** Doctorate in Veterinary Medicine from University of Illinois, Urbana Member of the CVMA, AVMA, VIN
   - heading: Lexi Mills
     title: Hospital Manager
     headshot: lizzy-color_297-2-copy-1-.jpg
